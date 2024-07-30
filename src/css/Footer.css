@@ -1,0 +1,59 @@
+.footer{
+    max-width: 1160.58px;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    background-color: white;
+
+}
+
+.footer-company{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  font-size: 44px;
+  margin: 0;
+  color: #181E4B;
+}
+
+h5{
+    font-weight: 700;
+    color: #080809;
+    font-size: 12px;
+}
+p{
+    color: #5E6282;
+    font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+}
+.div1 p{
+  
+}
+
+.company {
+    line-height: 1em;
+    
+}
+
+.outbound img{
+    height: auto;
+    width: 214px;
+}
+.rights{
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 2em;
+        gap: 1em;
+    }
+
+    .div1{
+        width: auto;
+    }
+}

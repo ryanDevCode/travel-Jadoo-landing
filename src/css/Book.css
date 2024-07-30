@@ -1,0 +1,73 @@
+.book{
+    max-width: 1160.58px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    margin-top: 4em;
+}
+h6{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #5E6282;
+  }
+  
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px ;
+    color: #14183E;
+}
+
+.left-book{
+    text-align: left;
+    width: 50%;
+}
+.step-cards{
+    display: flex;
+    gap: 1em;
+}
+.step-cards img{
+    width: 47px;
+    height: 48px;
+    margin-top: 1.5em;
+}
+.right-book{
+    width: 50%;
+}
+.right-book img{
+    height: auto;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .right-book{
+       display: none;
+    }
+
+    .book{
+        margin: 0 2em;
+        text-align: center;
+    }
+
+    .left-book{
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .step-text h5{
+        text-align: left;
+    }
+    .step-cards img{
+        width: 47px;
+        height: 48px;
+        text-align: left;
+        line-height: 1em;
+    }
+
+    
+ 
+}

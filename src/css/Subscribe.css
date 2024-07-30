@@ -1,0 +1,60 @@
+.subscribe {
+    max-width: 1160.58px;
+    background-image: url(../assets/subscribe.png);
+    background-size: 1257px auto;
+    height: 500px;
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-bottom: 3em;
+}
+.subscribe-content{
+    padding: 5em;
+    text-align: center;
+}
+.subscribe-content h1{
+font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 33px;
+  color: #5E6282;
+}
+form{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+input{
+    width: 421px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 0% 2em;
+    height: 68px;
+}
+a img{
+    height: 70px;
+}
+
+@media (max-width: 800px) {
+    .subscribe {
+        margin: auto;
+        margin-bottom: 3em;
+    }
+    .subscribe-content h1 {
+        font-size: 24px; /* Set a specific font size for smaller screens */
+      }
+
+      input{
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        padding: 0 1em;
+        height: 30px;
+    }
+    a img{
+        height: 30px;
+        width: auto;
+    }
+
+  }

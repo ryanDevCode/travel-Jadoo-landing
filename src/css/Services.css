@@ -1,0 +1,103 @@
+.services{
+    max-width: 1160.58px;
+    margin: auto;
+    margin-top: 3em;
+    padding-bottom: 2em;
+}
+
+h6{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #5E6282;
+}
+
+h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px ;
+  color: #14183E;
+}
+.Services-heading{
+    justify-content: center;
+    text-align: center;
+}
+
+.cards-container{
+    display: flex;
+    gap: 1em;
+    padding: 1.5em;
+}
+
+.cards {
+    height: 350px;
+    width: 302px;
+    text-align: center;
+    padding: 1em 2em;
+    line-height: 2em;
+    border-radius: 36px;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.cards:hover {
+    box-shadow: 
+        0px 100px 80px rgba(0, 0, 0, 0.02),
+        0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+        0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+        0px 20px 13px rgba(0, 0, 0, 0.01),
+        0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+        0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+
+.rectangle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: -2em;
+    bottom: -2em;
+    background: #DF6951;
+    border-radius: 30px 0 10px;
+    display: none;
+    z-index: -1;
+}
+
+.cards:hover .rectangle {
+    display: block;
+}
+.cards img{
+    height: 78px;
+    width: auto;
+}
+
+.cards h5{
+    font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #1E1D4C;
+
+}
+
+.details-container p{
+    font-size: 16px;
+}
+
+.details-container h5{
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 800px) {
+    .services{
+        margin: 2em;
+    }
+    .cards-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding: 0 30px;
+    }
+
+  }

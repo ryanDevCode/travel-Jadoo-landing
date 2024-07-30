@@ -1,0 +1,144 @@
+nav{
+    display: flex;
+    max-width: 1160.58px;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 2em;
+}
+.logo-containers {
+    width: auto; 
+    height: 100px; 
+}
+
+.logo-container img {
+    width: auto; 
+    height: 100%;
+}
+.nav-items-container{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+   
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+li{
+    list-style-type: none;
+}
+  
+
+a{
+    text-decoration: none;
+    color: black;
+
+    position: relative;
+}
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Initially set the width to 0 to hide the line */
+    height: 2px; /* Set the height of the line */
+    background-color: #5E6282; /* Set the color of the line */
+    transition: width 0.3s; /* Add a smooth transition for the line width */
+  }
+  
+  a:hover::after {
+    width: 100%; /* Expand the line width to cover the entire list item on hover */
+  }
+img{
+    height: 50px;
+    width: auto;
+}
+.buttons{
+    height: 36px;
+}
+a.buttons {
+    padding: 5px 15px; 
+    border: 1px solid black; 
+    text-decoration: none;
+    color: black; 
+    border-radius: 5px;
+    margin: .5em;
+  }
+
+  a.button2 {
+    display: flex;
+    padding: 5px 20px;
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set text color to black */
+    border-radius: 5px;
+    margin: .5em;
+  }
+  a.button2 img{
+    height: 4.5px;
+    width: auto;
+  }
+
+nav .menu {
+    /* display: none; */
+    position: relative;
+    top: 0.75rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: black;
+    border-radius: 0.2rem;
+}
+
+
+@media (max-width: 768px) {
+    nav{
+        display: flex;
+        /* flex-direction: column; */
+        padding: 2em;
+        flex-wrap: wrap;
+    }
+    .nav-items-container{
+        display: none;
+        flex-direction: column;
+        background-color: palegoldenrod;
+        width: 100%;
+        text-align: center;
+        padding: 2em 0;
+    }
+    nav .menu {
+        display: flex;
+    }
+ 
+    nav ul {
+        flex-direction: column;
+        margin-bottom: 0.25rem;
+    }
+
+    .open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+
+
+}
